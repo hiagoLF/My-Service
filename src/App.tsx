@@ -1,26 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
+import { SideBarProvider } from "./contexts/SideBarContext";
+
+import ServicesPage from "./pages/ServicesPage/";
+import SchedulePage from "./pages/SchedulePage/";
+import AdminPage from "./pages/AdminPage/";
+import ConfigPage from "./pages/ConfigPage/";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <BrowserRouter>
+         <SideBarProvider>
+            <Switch>
+               <Route path="/" exact component={ServicesPage} />
+               <Route
+                  path="/:serviceId/schedule"
+                  exact
+                  component={SchedulePage}
+               />
+               <Route path="/:serviceId/admin" exact component={AdminPage} />
+               <Route path="/:serviceId/config" exact component={ConfigPage} />
+            </Switch>
+         </SideBarProvider>
+      </BrowserRouter>
+   );
 }
 
 export default App;

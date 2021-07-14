@@ -1,0 +1,142 @@
+{
+   "days": [
+      {
+         "dayName": "Segunda-Feira",
+         "dayDate": "20/05/2020",
+         "vacancies": [
+            {
+               "time": "8:00",
+               "status": "free"
+            },
+            {
+               "time": "9:00",
+               "status": "occupied"
+            },
+            {
+               "time": "10:00",
+               "status": "mine"
+            },
+            {
+               "time": "11:00",
+               "status": "waiting"
+            },
+            {
+               "time": "12:00",
+               "status": "free"
+            },
+            {
+               "time": "13:00",
+               "status": "free"
+            },
+            {
+               "time": "14:00",
+               "status": "free"
+            },
+            {
+               "time": "15:00",
+               "status": "occupied"
+            },
+            {
+               "time": "16:00",
+               "status": "free"
+            },
+            {
+               "time": "17:00",
+               "status": "free"
+            }
+         ]
+      },
+      {
+         "dayName": "Terça-Feira",
+         "dayDate": "21/05/2020",
+         "vacancies": [
+            {
+               "time": "8:00",
+               "status": "free"
+            },
+            {
+               "time": "9:00",
+               "status": "occupied"
+            },
+            {
+               "time": "10:00",
+               "status": "mine"
+            },
+            {
+               "time": "11:00",
+               "status": "free"
+            },
+            {
+               "time": "12:00",
+               "status": "free"
+            },
+            {
+               "time": "13:00",
+               "status": "free"
+            },
+            {
+               "time": "14:00",
+               "status": "free"
+            },
+            {
+               "time": "15:00",
+               "status": "occupied"
+            },
+            {
+               "time": "16:00",
+               "status": "free"
+            },
+            {
+               "time": "17:00",
+               "status": "free"
+            }
+         ]
+      },
+      {
+         "dayName": "Quarta-Feira",
+         "dayDate": "22/05/2020",
+         "vacancies": [
+            {
+               "time": "8:00",
+               "status": "free"
+            },
+            {
+               "time": "9:00",
+               "status": "occupied"
+            },
+            {
+               "time": "10:00",
+               "status": "mine"
+            },
+            {
+               "time": "11:00",
+               "status": "free"
+            },
+            {
+               "time": "12:00",
+               "status": "free"
+            },
+            {
+               "time": "13:00",
+               "status": "free"
+            },
+            {
+               "time": "14:00",
+               "status": "free"
+            },
+            {
+               "time": "15:00",
+               "status": "occupied"
+            },
+            {
+               "time": "16:00",
+               "status": "free"
+            },
+            {
+               "time": "17:00",
+               "status": "free"
+            }
+         ]
+      }
+   ]
+}
