@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { useSideBar } from "../../contexts/SideBarContext";
+import { useHistory } from "react-router-dom";
 
 import {
    SideBarContainer,
@@ -10,8 +12,7 @@ import pointIcon from "../../assets/icons/point.svg";
 import adminIcon from "../../assets/icons/admin.svg";
 import settingsIcon from "../../assets/icons/settings.svg";
 import logoutIcon from "../../assets/icons/logout.svg";
-import { useSideBar } from "../../contexts/SideBarContext";
-import { useHistory } from "react-router-dom";
+import peopleIcon from "../../assets/icons/people.svg";
 
 const SideBar: React.FC = () => {
    const history = useHistory();
@@ -59,6 +60,15 @@ const SideBar: React.FC = () => {
 
             <button
                onClick={() =>
+                  handleSideBarLinkButtonClick("/235164634345/customers")
+               }
+            >
+               <img src={peopleIcon} alt="Cliêntes" />
+               <span>Clientes</span>
+            </button>
+
+            <button
+               onClick={() =>
                   handleSideBarLinkButtonClick("/235164634345/config")
                }
             >
@@ -66,7 +76,7 @@ const SideBar: React.FC = () => {
                <span>Configurações</span>
             </button>
 
-            <button>
+            <button onClick={() => alert("Logout...")}>
                <img src={logoutIcon} alt="Serviços" />
                <span>Sair</span>
             </button>

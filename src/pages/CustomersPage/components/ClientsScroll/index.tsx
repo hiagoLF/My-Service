@@ -1,10 +1,7 @@
 import React from "react";
 
 import { RegisteredCustomersContainer } from "./styles";
-import ParticularSetting from "../../../../../components/ParticularSetting";
-
-import peopleIcon from "../../../../../assets/icons/people.svg";
-import PersonCard from "../../../../../components/PersonCard";
+import PersonCard from "../../../../components/PersonCard";
 
 const customers = [
    {
@@ -67,24 +64,32 @@ const customers = [
       status: "confirmed",
       image: "https://pbs.twimg.com/profile_images/1293914394489835521/J086cQFl_400x400.jpg",
    },
+   {
+      name: "Danial Alves",
+      status: "waiting",
+      image: "https://pbs.twimg.com/profile_images/1085239615689293825/XLmISw5p.jpg",
+   },
+   {
+      name: "Danial Alves",
+      status: "waiting",
+      image: "https://pbs.twimg.com/profile_images/1085239615689293825/XLmISw5p.jpg",
+   },
 ];
 
-const RegisteredCustomers: React.FC = () => {
+const ClientsScroll: React.FC = () => {
    return (
-      <ParticularSetting title="Clientes" settingIcon={peopleIcon}>
-         <RegisteredCustomersContainer>
-            {customers.map((customer, index) => (
-               <PersonCard
-                  key={index}
-                  personImageUrl={customer.image}
-                  personStatus={customer.status}
-               >
-                  <span>{customer.name}</span>
-               </PersonCard>
-            ))}
-         </RegisteredCustomersContainer>
-      </ParticularSetting>
+      <RegisteredCustomersContainer>
+         {customers.map((customer, index) => (
+            <PersonCard
+               key={index}
+               personImageUrl={customer.image}
+               personStatus={customer.status}
+            >
+               <span>{customer.name}</span>
+            </PersonCard>
+         ))}
+      </RegisteredCustomersContainer>
    );
 };
 
-export default RegisteredCustomers;
+export default ClientsScroll;

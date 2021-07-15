@@ -6,6 +6,8 @@ import ParticularSetting from "../../../../../components/ParticularSetting";
 import ServiceCheckItem from "./ServiceCheckItem/";
 import suitcaseIcon from "../../../../../assets/icons/suitcase.svg";
 
+import AddNewService from "./AddNewService/";
+
 const services = [
    {
       name: "Progressiva",
@@ -33,6 +35,8 @@ const AvaliableServices: React.FC = () => {
                   <ServiceCheckItem service={service} key={index} />
                ))}
             </div>
+
+            <AddNewService />
          </AvaliableServicesContainer>
       </ParticularSetting>
    );
