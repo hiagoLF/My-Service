@@ -8,29 +8,23 @@ import SchedulePage from "./pages/SchedulePage/";
 import AdminPage from "./pages/AdminPage/";
 import ConfigPage from "./pages/ConfigPage/";
 import CustomersPage from "./pages/CustomersPage";
+import LoginPage from "./pages/LoginPage";
 
 function App() {
-   return (
-      <BrowserRouter>
-         <SideBarProvider>
-            <Switch>
-               <Route path="/" exact component={ServicesPage} />
-               <Route
-                  path="/:serviceId/schedule"
-                  exact
-                  component={SchedulePage}
-               />
-               <Route path="/:serviceId/admin" exact component={AdminPage} />
-               <Route path="/:serviceId/config" exact component={ConfigPage} />
-               <Route
-                  path="/:serviceId/customers"
-                  exact
-                  component={CustomersPage}
-               />
-            </Switch>
-         </SideBarProvider>
-      </BrowserRouter>
-   );
+  return (
+    <BrowserRouter>
+      <SideBarProvider>
+        <Switch>
+          <Route path="/" exact component={ServicesPage} />
+          <Route path="/:serviceId/schedule" exact component={SchedulePage} />
+          <Route path="/:serviceId/admin" exact component={AdminPage} />
+          <Route path="/:serviceId/config" exact component={ConfigPage} />
+          <Route path="/:serviceId/customers" exact component={CustomersPage} />
+          <Route path="/login" exact component={LoginPage} />
+        </Switch>
+      </SideBarProvider>
+    </BrowserRouter>
+  );
 }
 
 export default App;
