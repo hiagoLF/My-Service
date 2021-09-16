@@ -9,6 +9,7 @@ import AdminPage from "./pages/AdminPage/";
 import ConfigPage from "./pages/ConfigPage/";
 import CustomersPage from "./pages/CustomersPage";
 import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/:serviceId/config" exact component={ConfigPage} />
           <Route path="/:serviceId/customers" exact component={CustomersPage} />
           <Route path="/login" exact component={LoginPage} />
+          <Route path="/register" exact component={RegisterPage} />
         </Switch>
       </SideBarProvider>
     </BrowserRouter>

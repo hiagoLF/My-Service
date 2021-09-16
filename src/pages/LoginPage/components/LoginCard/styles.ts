@@ -17,4 +17,11 @@ export const LoginCardContainer = styled.div`
     font-size: 30px;
     font-weight: bold;
   }
+
+  #google-login-description {
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.5;
+    margin: 0 10px 20px 10px;
+  }
 `;
